@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  <script src="https://cdn.socket.io/3.1.3/socket.io.min.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+  <script src="scripts/index.js"></script>
+  <body>
+    <h1>Web Sockets</h1>
+    <h4>
+      <div><span class="connected">---</span> clients connected</div>
+      <div><span class="active">---</span> clients active</div>
+      <div class="notify">Not Connected</div>
+    </h4>
+    <div><input id="name" placeholder="Name" /></div>
+    <button id="connect">Connect</button>
+    <button id="disconnect">Disconnect</button>
+    <div><input id="to" placeholder="To" /></div>
+    <div>
+      <textarea id="message" placeholder="Type a message"/></textarea>
+    </div>
+    <button id="send">Send</button>
+    <button id="clear">Clear</button>
+    <ul id="messages"></ul>
+  </body>
+</html>
